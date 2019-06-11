@@ -1,0 +1,92 @@
+#coverimg{
+  display: flex;
+  align-items: flex-end;
+  background: url('https://github.com/CorvusDrax/final_spring_19/blob/master/assets/images/john-westrock-706905-unsplash.jpg?raw=true');
+  background-size: cover;
+  height: 700px;
+}
+
+h1{
+  color: #014262;
+  font-size: 90px;
+  background-color: #FBF7EB;
+  margin: 0px;
+}
+
+h2{
+  font-size: 16px;
+  color: #014262;
+}
+
+p{
+  
+  font-size: 12.31px;
+  color: #4E4E4E;
+}
+
+section#body{
+  margin: 20px 60px;
+}
+
+section#gallery{
+  margin: 0px 60px;
+  height: 1000px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+div#pic1{
+      background: url('https://github.com/CorvusDrax/final_spring_19/blob/master/assets/images/alex-shutin-203873-unsplash.jpg?raw=true');
+  background-size: cover;
+  border-radius: 5px;
+  
+}
+
+div#pic2{
+    background: url('https://github.com/CorvusDrax/final_spring_19/blob/master/assets/images/matthew-brodeur-428829-unsplash.jpg?raw=true');
+  background-size: cover;
+  border-radius: 5px;
+}
+
+div#pic3{
+  background: url('https://github.com/CorvusDrax/final_spring_19/blob/master/assets/images/chris-osmond-385532-unsplash.jpg?raw=true');
+  background-size: cover;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  
+  section#page{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  
+  section#top{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 7;
+  }
+  
+  div#sum{
+    position: relitive;
+    top: 80px;
+  }
+  
+  section#body{
+    margin: 0px;
+     grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  
+  
+}
